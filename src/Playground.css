@@ -1,0 +1,53 @@
+.playground-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+.playground {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeaea;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 50px;
+  width: 250px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 60%;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  border: 2px solid lightgrey;
+}
+
+.playground-controls-container {
+  height: 20%;
+  width: 100%;
+  background: white;
+  border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey;
+}
+
+.code-output-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  background: white;
+  border: 2px solid lightgrey;
+  border-radius: 0px 0px 15px 15px;
+}
