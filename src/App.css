@@ -63,6 +63,7 @@
   border-radius: 5px;
   height: 25px;
   width: 40px;
+  border: 2px solid lightgrey;
 }
 
 .color-btn:hover {

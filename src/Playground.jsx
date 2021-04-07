@@ -24,44 +24,61 @@ function Playground({ x, y, blur, spread, opacity, color }) {
       </div>
 
       <div className="playground-controls-container">
+        <div className="playground__controls">
+
+         <div className="playground__control">
+           <div className="slider-container">
+             <label className="label" htmlFor="label">box color</label>
+             <div className="box-color-container">
+               <button
+                 className="color-btn"
+                 onClick={() => setShowBoxColorPicker(showBoxColorPicker = !showBoxColorPicker)}
+                 style={{background: `${boxColor}`}}
+               >
+               </button>
+               {showBoxColorPicker && (
+                 <ChromePicker
+                   className="chrome-picker-palette"
+                   color={boxColor}
+                   onChange={e => setBoxColor(e.hex)}
+                 />
+               )}
+             </div>
+           </div>
+           <div className="value-container">
+             <p>{boxColor}</p>
+           </div>
+         </div>
+
         <div className="playground__control">
+         <div className="slider-container">
+           <label className="label" htmlFor="label">background color</label>
+           <div className="box-color-container">
+             <button
+               className="color-btn"
+               onClick={() => setShowBackgroundColorPicker(showBackgroundColorPicker = !showBackgroundColorPicker)}
+               style={{background: `${backgroundColor}`}}
+             >
+             </button>
+             {showBackgroundColorPicker && (
+               <ChromePicker
+                 className="chrome-picker-palette"
+                 color={backgroundColor}
+                 onChange={e => setBackgroundColor(e.hex)}
+               />
+             )}
+           </div>
+         </div>
+         <div className="value-container">
+           <p>{backgroundColor}</p>
+         </div>
+       </div>
 
-
-          <div className="box-color-container">
-            <button
-              onClick={() => setShowBoxColorPicker(showBoxColorPicker = !showBoxColorPicker)}
-              // onBlur={() => setShowBoxColorPicker(showBoxColorPicker = !showBoxColorPicker)}
-            >
-              {showBoxColorPicker ? 'set box color' : 'choose box color'}
-            </button>
-            {showBoxColorPicker && (
-              <ChromePicker
-                className="chrome-picker-palette"
-                color={boxColor}
-                onChange={e => setBoxColor(e.hex)}
-              />
-            )}
-          </div>
-
-          <div className="box-color-container">
-            <button
-              onClick={() => setShowBackgroundColorPicker(showBackgroundColorPicker = !showBackgroundColorPicker)}
-            >
-              {showBackgroundColorPicker ? 'set background color' : 'choose background color'}
-            </button>
-            {showBackgroundColorPicker && (
-              <ChromePicker
-                className="chrome-picker-palette"
-                color={backgroundColor}
-                onChange={e => setBackgroundColor(e.hex)}
-              />
-            )}
-          </div>
         </div>
       </div>
 
       <div className="code-output-container">
-        <textarea value={`box-shadow: ${x}px ${y}px ${blur}px ${spread}px ${color};`}></textarea>
+        <p>{`box-shadow: ${x}px ${y}px ${blur}px ${spread}px ${color};`}</p>
       </div>
 
     </div>
