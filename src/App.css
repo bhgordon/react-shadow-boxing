@@ -58,4 +58,19 @@
   width: 100px;
 }
 
+.color-btn {
+  all: unset;
+  border-radius: 5px;
+  height: 25px;
+  width: 40px;
+}
+
+.color-btn:hover {
+  opacity: 0.5;
+}
+
+.box-color-container {
+  height: 25px;
+  width: 40px;
+}
 

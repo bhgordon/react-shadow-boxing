@@ -9,8 +9,8 @@ function App() {
   const [y, setY] = useState(0);
   const [blur, setBlur] = useState(0);
   const [spread, setSpread] = useState(0);
-  const [color, setColor] = useState('#000');
-
+  const [color, setColor] = useState('#000')
+  let [showColorPicker, setShowColorPicker] = useState(false)
 
   return (
     <div className="app">
@@ -99,7 +99,27 @@ function App() {
           </div>
 
           <div className="app__control">
-            <ChromePicker color={color} onChange={e => setColor(e.hex)} />
+            <div className="slider-container">
+              <label className="label" htmlFor="label">shadow color</label>
+              <div className="box-color-container">
+                <button
+                  className="color-btn"
+                  onClick={() => setShowColorPicker(showColorPicker = !showColorPicker)}
+                  style={{background: `${color}`}}
+                >
+                </button>
+                {showColorPicker && (
+                  <ChromePicker
+                    className="chrome-picker-palette"
+                    color={color}
+                    onChange={e => setColor(e.hex)}
+                  />
+                )}
+              </div>
+            </div>
+            <div className="value-container">
+              <p>{color}</p>
+            </div>
           </div>
         </div>
       </div>
