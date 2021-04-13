@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-shadow-boxing/static/css/main.f15f4445.chunk.css",
+    "main.js": "/react-shadow-boxing/static/js/main.bad3ec20.chunk.js",
+    "main.js.map": "/react-shadow-boxing/static/js/main.bad3ec20.chunk.js.map",
+    "runtime-main.js": "/react-shadow-boxing/static/js/runtime-main.2516c669.js",
+    "runtime-main.js.map": "/react-shadow-boxing/static/js/runtime-main.2516c669.js.map",
+    "static/js/2.3d3b52e2.chunk.js": "/react-shadow-boxing/static/js/2.3d3b52e2.chunk.js",
+    "static/js/2.3d3b52e2.chunk.js.map": "/react-shadow-boxing/static/js/2.3d3b52e2.chunk.js.map",
+    "static/js/3.cb133ad8.chunk.js": "/react-shadow-boxing/static/js/3.cb133ad8.chunk.js",
+    "static/js/3.cb133ad8.chunk.js.map": "/react-shadow-boxing/static/js/3.cb133ad8.chunk.js.map",
+    "index.html": "/react-shadow-boxing/index.html",
+    "static/css/main.f15f4445.chunk.css.map": "/react-shadow-boxing/static/css/main.f15f4445.chunk.css.map",
+    "static/js/2.3d3b52e2.chunk.js.LICENSE.txt": "/react-shadow-boxing/static/js/2.3d3b52e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2516c669.js",
+    "static/js/2.3d3b52e2.chunk.js",
+    "static/css/main.f15f4445.chunk.css",
+    "static/js/main.bad3ec20.chunk.js"
+  ]
+}
