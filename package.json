@@ -1,5 +1,6 @@
 {
   "name": "react-shadow-boxing",
+  "homepage": "https://bhgordon.github.io/react-shadow-boxing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
