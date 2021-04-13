@@ -30,11 +30,7 @@ function App() {
               />
             </div>
             <div className="value-container">
-              <input
-                type="text"
-                value={x}
-                style={{width: 50}}
-              />
+              <p>{`${x}`}</p>
             </div>
           </div>
 
@@ -50,11 +46,7 @@ function App() {
               />
             </div>
             <div className="value-container">
-              <input
-                type="text"
-                value={y}
-                style={{width: 50}}
-              />
+              <p>{`${y}`}</p>
             </div>
           </div>
 
@@ -70,11 +62,7 @@ function App() {
               />
             </div>
             <div className="value-container">
-              <input
-                type="text"
-                value={blur}
-                style={{width: 50}}
-              />
+              <p>{`${blur}`}</p>
             </div>
           </div>
 
@@ -90,11 +78,7 @@ function App() {
               />
             </div>
             <div className="value-container">
-              <input
-                type="text"
-                value={spread}
-                style={{width: 50}}
-              />
+              <p>{`${spread}`}</p>
             </div>
           </div>
 

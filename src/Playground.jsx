@@ -27,8 +27,8 @@ function Playground({ x, y, blur, spread, opacity, color }) {
         <div className="playground__controls">
 
          <div className="playground__control">
-           <div className="slider-container">
-             <label className="label" htmlFor="label">box color</label>
+           <div className="color-container">
+             <label htmlFor="label">box color</label>
              <div className="box-color-container">
                <button
                  className="color-btn"
@@ -51,8 +51,8 @@ function Playground({ x, y, blur, spread, opacity, color }) {
          </div>
 
         <div className="playground__control">
-         <div className="slider-container">
-           <label className="label" htmlFor="label">background color</label>
+         <div className="color-container">
+           <label htmlFor="label">background color</label>
            <div className="box-color-container">
              <button
                className="color-btn"
